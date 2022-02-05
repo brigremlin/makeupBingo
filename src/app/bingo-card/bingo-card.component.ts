@@ -4,20 +4,15 @@ import { Squares } from '../shared/squares';
 @Component({
   selector: 'app-bingo-card',
   templateUrl: './bingo-card.component.html',
-  styleUrls: ['./bingo-card.component.css']
+  styleUrls: ['./bingo-card.component.css'],
 })
 export class BingoCardComponent implements OnInit {
   bingoSquares;
-  isClicked=  false;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     this.bingoSquares = Squares;
-  }
-
-  onClick(){
-    this.isClicked = true;
   }
 
 }
